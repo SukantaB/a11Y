@@ -242,6 +242,8 @@ a:hover{
   padding: 10px;
   height: auto;
   width: auto;
+  background-color: white;
+  color: #363636 !important;
 }
 .breadcrumb{
   display: flex;
