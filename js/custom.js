@@ -1,3 +1,5 @@
+let count = 1;
+
 (function() {
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
@@ -12,6 +14,12 @@ document.querySelectorAll("#nav li").forEach(function(navEl) {
     toggleTab(this.id, this.dataset.target);
   };
 });
+
+setInterval(()=>{
+  const element = document.getElementById('announcement');
+  element.innerText = `OMG, something happened times ${count}`
+  count = count + 1
+},60000)
 
 function toggleTab(selectedNav, targetId) {
   var navEls = document.querySelectorAll("#nav li");

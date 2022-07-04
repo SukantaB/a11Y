@@ -191,7 +191,7 @@ textarea:focus, input:focus, select:focus, button:focus{
   background-color: #0026ff;
 }
 .tag.is-danger{
-  background-color: rgb(255, 72, 0) !important;
+  background-color: #e31c3d !important;
 }
 .tag.is-success{
   background-color: green !important;
@@ -206,7 +206,8 @@ textarea:focus, input:focus, select:focus, button:focus{
   color: #0026ff !important;
 }
 .help.is-danger{
-  color: red;
+  color: #e31c3d;
+  font-size: 14px;
 }
 
 body{
@@ -218,6 +219,7 @@ p{
 }
 a{
   color: #0026ff;
+  text-decoration: underline;
 }
 a:visited{
   text-decoration: underline;
@@ -252,4 +254,13 @@ a:hover{
 }
 .breadcrumb-anchor{
   color: white !important;
+}
+#announcement{
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.help.is-success{
+  color: green;
 }

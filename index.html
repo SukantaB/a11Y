@@ -12,6 +12,7 @@
 
 <body>
   <header class="hero-head hero hero-bg">
+    <div id="announcement" aria-live="polite"></div>
     <a href="#hero" class="skip-navigation"> Skip navigation link</a>
     <nav class="navbar container">
       <div class="container">
@@ -30,7 +31,7 @@
           <ul class="navbar-end">
             <li class="navbar-item">
               <a href="/" class="button is-white is-outlined">
-                <span class="icon">
+                <span aria-hidden="true" class="icon"  aria-hidden="true">
                   <i class="fa fa-home"></i>
                 </span>
                 <span>Home</span>
@@ -38,7 +39,7 @@
             </li>
             <li class="navbar-item">
               <a href="/" class="button is-white is-outlined">
-                <span class="icon">
+                <span aria-hidden="true" class="icon" aria-hidden="true">
                   <i class="fab fa-superpowers"></i>
                 </span>
                 <span>Examples</span>
@@ -46,7 +47,7 @@
             </li>
             <li class="navbar-item">
               <a href="/" class="button is-white is-outlined" >
-                <span class="icon">
+                <span aria-hidden="true" class="icon" aria-hidden="true">
                   <i class="fa fa-book"></i>
                 </span>
                 <span>Documentation</span>
@@ -54,7 +55,7 @@
             </li>
             <li class="navbar-item">
               <a href="/" class="button is-white is-outlined" >
-                <span class="icon">
+                <span aria-hidden="true" class="icon" aria-hidden="true">
                   <i class="fab fa-github"></i>
                 </span>
                 <span>View Source</span>
@@ -80,7 +81,7 @@
     <div class="hero-body" id="hero">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <h1 class="title has-text-white">We have web accessibility in mind</h1>
+          <h1 class="title has-text-white" aria-live="assertive">We have web accessibility in mind</h1>
           <p class="subtitle has-text-white">
             Would you like to get the latest news?
           </p>
@@ -300,19 +301,19 @@
       <ul>
         <li data-target="pane-1" id="1" class="is-active">
           <button >
-            <span class="icon is-small"><i class="fa fa-image"></i></span>
+            <span aria-hidden="true" class="icon is-small"><i class="fa fa-image"></i></span>
             <span>Pictures</span>
           </button>
         </li>
         <li data-target="pane-3" id="3">
           <button >
-            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+            <span aria-hidden="true" class="icon is-small"><i class="fab fa-superpowers"></i></span>
             <span>Team</span>
           </a>
         </li>
         <li data-target="pane-4" id="4">
           <button>
-            <span class="icon is-small"><i class="fa fa-film"></i></span>
+            <span aria-hidden="true" class="icon is-small"><i class="fa fa-film"></i></span>
             <span>Video</span>
           </button>
         </li>
@@ -921,7 +922,7 @@
         <div class="field">
           <div class="control">
             <label class="label" htmlFor="name">Name
-              <input class="input" type="text" placeholder="Text input" alt="name" id="name">
+              <input class="input" type="text" placeholder="Text input" alt="name" id="name" >
             </label>
           </div>
         </div>
@@ -932,12 +933,12 @@
           <div class="control has-icons-left has-icons-right">
 
             <input class="input is-success" type="text" alt="user name" id="username" name="username"
-              aria-label="username">
+              aria-label="username" aria-invalid="false">
 
-            <span class="icon is-small is-left">
+            <span aria-hidden="true" class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
-            <span class="icon is-small is-right">
+            <span aria-hidden="true" class="icon is-small is-right">
               <i class="fas fa-check"></i>
             </span>
           </div>
@@ -948,11 +949,11 @@
           <label class="label" htmlFor="email">Email</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-danger" type="email" placeholder="Email input" value="hello@" name="email"
-              id="email" aria-label="email">
-            <span class="icon is-small is-left">
+              id="email" aria-label="email" aria-invalid="true">
+            <span aria-hidden="true" class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
-            <span class="icon is-small is-right">
+            <span aria-hidden="true" class="icon is-small is-right">
               <i class="fas fa-exclamation-triangle"></i>
             </span>
           </div>
@@ -997,7 +998,8 @@
         </div>
 
         <div class="field">
-          <div class="control">
+          <fieldset class="control">
+            <legend>Aggree </legend>
             <label class="radio" htmlFor="radioyes">
               <input type="radio" name="question" alt="yes" id="radioyes">
               Yes
@@ -1006,7 +1008,7 @@
               <input type="radio" name="question" alt="no" id="radiono">
               No
             </label>
-          </div>
+          </fieldset>
         </div>
 
         <div class="field is-grouped">
@@ -1027,7 +1029,7 @@
         <div class="column is-one-third">
           <div class="notification media has-background-white">
             <div class="media-left">
-              <span class="icon">
+              <span aria-hidden="true" class="icon" aria-hidden="true">
                 <i class="has-text-warning fas fa-columns fa-lg"></i>
               </span>
             </div>
@@ -1044,7 +1046,7 @@
         <div class="column is-one-third">
           <div class="notification has-background-white media">
             <div class="media-left">
-              <span class="icon has-text-info">
+              <span aria-hidden="true" class="icon has-text-info">
                 <i class="fab fa-lg fa-wpforms"></i>
               </span>
             </div>
@@ -1061,7 +1063,7 @@
         <div class="column is-one-third">
           <div class="notification has-background-white media">
             <div class="media-left">
-              <span class="icon has-text-danger">
+              <span aria-hidden="true" class="icon has-text-danger">
                 <i class="fas fa-lg fa-cubes"></i>
               </span>
             </div>
@@ -1078,7 +1080,7 @@
         <div class="column is-one-third">
           <div class="notification has-background-white media">
             <div class="media-left">
-              <span class="icon has-text-grey">
+              <span aria-hidden="true" class="icon has-text-grey">
                 <i class="fas fa-lg fa-cogs"></i>
               </span>
             </div>
@@ -1095,7 +1097,7 @@
         <div class="column is-one-third">
           <div class="notification has-background-white media">
             <div class="media-left">
-              <span class="icon has-text-primary">
+              <span aria-hidden="true" class="icon has-text-primary">
                 <i class="fas fa-lg fa-warehouse"></i>
               </span>
             </div>
@@ -1112,7 +1114,7 @@
         <div class="column is-one-third">
           <div class="notification has-background-white media">
             <div class="media-left">
-              <span class="icon has-text-danger">
+              <span aria-hidden="true" class="icon has-text-danger">
                 <i class="fas fa-lg fa-cube"></i>
               </span>
             </div>
