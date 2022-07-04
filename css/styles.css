@@ -231,14 +231,14 @@ a:hover{
   color: #0026ff;
 }
 
-#skip-navigation{
+.skip-navigation{
   position: absolute;
   height: 0px;
   width: 0px;
   overflow: hidden;
 }
 
-#skip-navigation:focus{
+.skip-navigation:focus{
   padding: 10px;
   height: auto;
   width: auto;
@@ -247,7 +247,7 @@ a:hover{
 }
 .breadcrumb{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   padding-left: 50px;
 }
 .breadcrumb-anchor{
