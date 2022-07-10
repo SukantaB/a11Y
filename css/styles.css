@@ -108,7 +108,7 @@
 }
 
 .button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  background: #0026ff;
   font-weight: 700;
   font-size: 14px;
   height: 3rem;
@@ -175,4 +175,92 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+textarea:focus, input:focus, select:focus, button:focus{
+  outline: 2px solid !important;
+}
+.button.is-info{
+  background-color: #0026ff;
+}
+.subtitle {
+  color: #363636;
+}
+
+.hero.is-info{
+  background-color: #0026ff;
+}
+.tag.is-danger{
+  background-color: #e31c3d !important;
+}
+.tag.is-success{
+  background-color: green !important;
+}
+.tag.is-primary{
+  background-color: blue !important;
+}
+.has-text-grey-light{
+  color: black !important;
+}
+.footer a{
+  color: #0026ff !important;
+}
+.help.is-danger{
+  color: #e31c3d;
+  font-size: 14px;
+}
+
+body{
+  line-height: 2;
+}
+
+p{
+  line-height: 1.5 !important;
+}
+a{
+  color: #0026ff;
+  text-decoration: underline;
+}
+a:visited{
+  text-decoration: underline;
+  color: #0026ff;
+}
+a:link{
+  color: #0026ff;
+}
+a:hover{
+  text-decoration: underline;
+  color: #0026ff;
+}
+
+.skip-navigation{
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+.skip-navigation:focus{
+  padding: 10px;
+  height: auto;
+  width: auto;
+  background-color: white;
+  color: #363636 !important;
+}
+.breadcrumb{
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+}
+.breadcrumb-anchor{
+  color: white !important;
+}
+#announcement{
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.help.is-success{
+  color: green;
 }
