@@ -249,11 +249,10 @@ a:hover{
 }
 .breadcrumb{
   display: flex;
-  justify-content: center;
   padding-left: 50px;
 }
 .breadcrumb-anchor{
-  color: white !important;
+    /* color: white !important; */
 }
 #announcement{
   color: white;
@@ -263,4 +262,40 @@ a:hover{
 
 .help.is-success{
   color: green;
+}
+
+.visuallyHidden{
+  visibility: hidden;
+}
+.skip-navigation-container{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-dropdown-show{
+  display: block;
+  top: 50px;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  left: 0px;
+  width: 200px;
+}
+
+.menu-dropdown-show a {
+  padding: 5px 10px;
+  display: block;
+}
+
+.displayNone{
+  display: none;
+}
+
+.menu-dropdown-wrapper{
+  position: relative;
+}
+
+.right0{
+  right: 0px;
 }

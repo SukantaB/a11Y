@@ -11,9 +11,32 @@
 </head>
 
 <body>
+  <div inert class="visuallyHidden"> Hidden DIV </div>
+
+  <section class="skip-navigation-container">
+    <a href="#main-content" class="skip-navigation"> Skip navigation link</a>
+    <ul class="breadcrumb">
+      <li><a href="/about" class="breadcrumb-anchor">Main</a></li>    
+      <li><a href="/" class="breadcrumb-anchor">Home</a></li>
+    </ul>
+    <div class="menu-dropdown-wrapper">
+      <button onclick="myFunction()" aria-haspopup="true" id="menu-btn"> Extended Skip Navigation</button>
+      <ul id="menu-dropdown" class="displayNone">
+        <li><a href="#about" >About</a></li>
+        <li><a href="#key" >Three key</a></li>
+        <li><a href="#topic" >Topic</a></li>
+        <li><a href="#event" >Event</a></li>
+        <li><a href="#service" >Service</a></li>
+        <li><a href="#photo" >Photo</a></li>
+        <li><a href="#forum" >Forum</a></li>
+        <li><a href="#contact" >Contact</a></li>
+      </ul>
+    </div>
+
+  </section>
+
   <header class="hero-head hero hero-bg">
     <div id="announcement" aria-live="polite"></div>
-    <a href="#hero" class="skip-navigation"> Skip navigation link</a>
     <nav class="navbar container">
       <div class="container">
         <div class="navbar-brand">
@@ -65,18 +88,8 @@
         </menu>
       </div>
     </nav>
-    <ul class="breadcrumb">
-      <li><a href="#about" class="breadcrumb-anchor">About</a></li>
-      <li><a href="#key" class="breadcrumb-anchor">Three key</a></li>
-      <li><a href="#topic" class="breadcrumb-anchor">Topic</a></li>
-      <li><a href="#event" class="breadcrumb-anchor">Event</a></li>
-      <li><a href="#service" class="breadcrumb-anchor">Service</a></li>
-      <li><a href="#photo" class="breadcrumb-anchor">Photo</a></li>
-      <li><a href="#forum" class="breadcrumb-anchor">Forum</a></li>
-      <li><a href="#contact" class="breadcrumb-anchor">Contact</a></li>
-    </ul>
   </header>
- 
+ <main id="main-content">
   <section class="hero hero-bg is-fullheight" aria-label="hero banner" role="banner">
     <div class="hero-body" id="hero">
       <div class="container has-text-centered">
@@ -1022,7 +1035,7 @@
       </form>
     </div>
   </section>
-
+</main>
     <!-- <div class="section">
     <div class="container">
       <div class="columns is-multiline">
