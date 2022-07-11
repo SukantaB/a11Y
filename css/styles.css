@@ -264,3 +264,34 @@ a:hover{
 .help.is-success{
   color: green;
 }
+
+.hidden{
+  display: none;
+}
+
+.menu-dropdown-wrapper{
+  position: relative;
+}
+
+.menu-dropdown-show{
+  display: block;
+  top: 50px;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+.menu-dropdown-show a {
+  padding: 5px 10px;
+  display: block;
+}
+
+.seperator{
+  border-bottom: 1px solid;
+  width: 200px;
+  margin: 0px 5px;
+}
+.is-centered{
+  display: flex;
+  justify-content: center;
+}
