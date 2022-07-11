@@ -9,11 +9,11 @@ let count = 1;
   });
 })();
 
-document.querySelectorAll("#nav button").forEach(function(navEl) {
-  navEl.onclick = function() {
-    toggleTab(this.id, this.dataset.target);
-  };
-});
+// document.querySelectorAll("#nav button").forEach(function(navEl) {
+//   navEl.onclick = function() {
+//     toggleTab(this.id, this.dataset.target);
+//   };
+// });
 
 setInterval(()=>{
   const element = document.getElementById('announcement');
@@ -35,16 +35,18 @@ window.onclick = function(event) {
 
 
 function toggleTab(selectedNav, targetId) {
+  console.log(selectedNav,targetId )
   var navEls = document.querySelectorAll("#nav button");
-  console.log(navEls)
   navEls.forEach(function(navEl) {
     if (navEl.id == selectedNav) {
       navEl.classList.add("is-active");
       navEl.setAttribute('aria-selected', true)
+      navEl.setAttribute('tabindex', 0)
     } else {
       if (navEl.classList.contains("is-active")) {
         navEl.classList.remove("is-active");
         navEl.setAttribute('aria-selected', false)
+        navEl.setAttribute('tabindex', -1)
       }
     }
   });
