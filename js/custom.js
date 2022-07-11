@@ -15,6 +15,19 @@ document.querySelectorAll("#nav li").forEach(function(navEl) {
   };
 });
 
+function myFunction() {
+  document.getElementById("menu-dropdown").className = 'menu-dropdown-show'
+  document.getElementById("menu-btn").setAttribute('aria-expanded', true)
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#menu-btn')) {
+    document.getElementById("menu-dropdown").className = 'displayNone'
+    document.getElementById("menu-btn").setAttribute('aria-expanded', false)
+  }
+}
+
+
 setInterval(()=>{
   const element = document.getElementById('announcement');
   element.innerText = `OMG, something happened times ${count}`
