@@ -30,22 +30,22 @@
         <menu id="navbarMenu" class="navbar-menu">
           <ul class="navbar-end">
             <li class="navbar-item">
-              <div class="menu-dropdown-wrapper">
-                <button id="menu-btn" onclick="myFunction()" class="button is-white is-outlined" aria-expanded="false" aria-haspopup="true">
+              <div class="menu-dropdown-wrapper" id="menu-wrapper">
+                <button class="button is-white is-outlined menu-btn" aria-expanded="false" aria-haspopup="true">
                   <span aria-hidden="true" class="icon"  aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
                 </button>
-                <ul id="menu-dropdown" role="menu" class="hidden">
+                <ul role="menu" class="hidden menu-dropdown" >
                   <li role="none" > 
-                    <a role="menuitem" tabindex="0">Administration</a>  
+                    <a role="menuitem" href="/" class="drop-down-menu-item">Administration</a>  
                   </li>
-                  <li role="none"><a  href="/">Team Settings</a></li>
-                  <li role="none"><a role="menuitem" href="/">Manage Your Team</a></li>
-                  <li role="none"><a role="menuitem" href="/">Invitation</a></li>
+                  <li role="none"><a  href="/" class="drop-down-menu-item">Team Settings</a></li>
+                  <li role="none"><a role="menuitem" href="/" class="drop-down-menu-item">Manage Your Team</a></li>
+                  <li role="none"><a role="menuitem" href="/" class="drop-down-menu-item">Invitation</a></li>
                   <li role="seperator" class="seperator" tabindex="-1"></li>
-                  <li role="none"><a role="menuitem" href="/">Authentication</a></li>
+                  <li role="none"><a role="menuitem" href="/" class="drop-down-menu-item">Authentication</a></li>
                 </ul>
               </div>
              
@@ -324,7 +324,7 @@
           <span>Video</span>
         </button>
       </div>
-      <div class="tab-pane is-active" id="pane-1" class="level" aria-labelledby="1" role="tabpanel" tabindex="0">
+      <div class="tab-pane is-active" id="pane-1" class="level" aria-labelledby="1" role="tabpanel">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -340,7 +340,7 @@
                     <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer
                       enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper
                       viverra nam.</p>
-                    <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
+                    <span class="button is-link modal-button" data-target="modal-image1" tabindex="0">Image modal</span>
                   </div>
                 </div>
               </div>
@@ -359,7 +359,7 @@
                       odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue.
                       Phasellus vestibulum lorem
                       sed risus.</p>
-                    <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                    <span class="button is-link modal-button" data-target="modal-card" tabindex="0">Modal Card</span>
                   </div>
                 </div>
               </div>
@@ -386,7 +386,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3" aria-labelledby="3"  role="tabpanel" tabindex="0"  hidden>
+      <div class="tab-pane" id="pane-3" aria-labelledby="3"  role="tabpanel" hidden>
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -451,7 +451,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-4"  aria-labelledby="4" role="tabpanel" tabindex="0" hidden>
+      <div class="tab-pane" id="pane-4"  aria-labelledby="4" role="tabpanel"  hidden>
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
